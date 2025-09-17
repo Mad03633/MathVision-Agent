@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import ocr, solver
 
 
-app = FastAPI(title="MathVision Agent API")
+app = FastAPI(title="MathVision Agent API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware, 
